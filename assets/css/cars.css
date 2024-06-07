@@ -1,0 +1,87 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  width: 1440px;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: 'Oswald',sans-serif;
+  text-align: center;
+}
+
+#header {
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+ul {
+  width: 720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px 20px;
+  list-style-type: none;
+  font-family: 'Teko',sans-serif;
+  font-size: 20px;
+}
+
+li {
+  border: 1px solid black;
+  padding: 5px 5px;
+}
+
+@media (width <= 768px) {
+  body {
+    width: 768px;
+  }
+
+  #header {
+    width: 384px;
+  }
+
+  ul {
+    width: 384px;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (width <= 320px) {
+  body {
+    width: 320px;
+  }
+
+  #header {
+    width: 160px;
+  }
+
+  ul {
+    width: 160px;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+}
